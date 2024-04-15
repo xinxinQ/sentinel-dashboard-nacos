@@ -43,7 +43,7 @@ public abstract class AbstractNacosPublisher<T> implements DynamicRulePublisher<
 
         log.info("publish; dataId: {},groupId: {},rules: {}",dataId,groupId,rules);
 
-        nacosConfigService.publishConfig(dataId,groupId, converter.convert(rules));
+        nacosConfigService.publishConfig(dataId,groupId, converter.convert(rules), ConfigType.JSON.getType());
     }
 
     /**

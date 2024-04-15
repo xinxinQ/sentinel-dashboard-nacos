@@ -16,7 +16,7 @@ import java.util.List;
  * 抽象公用Nacos规则发布者
  *
  * 用于把配置发布到nacos保存
- *
+ * 修改规则同步nacos配置中心文件格式为json，默认不指定为字符串
  * @author modongning
  * @createDate 2022/11/14
  */
